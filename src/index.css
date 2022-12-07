@@ -4,7 +4,7 @@
   --primary-color: #9ccc3d;
   --background-color: rgba(3, 3, 27, 0.7);
   --dark-background-color: rgb(2, 2, 15);
-  --font: "Exo", sans-serif;
+  --font: sans-serif;
 }
 
 * {

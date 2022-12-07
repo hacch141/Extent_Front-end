@@ -27,7 +27,8 @@ const Section = styled.section`
   color: white;
   display: flex;
   margin-left: 25%;
-  margin-bottom: 110px;
+  margin-top: 10px;
+  margin-bottom: 109px;
   background-color: rgb(23, 23, 23);
   display: flex;
   justify-content: space-between;
@@ -54,6 +55,9 @@ const Section = styled.section`
     text-align: right;
     gap: 0.5rem;
     .my-name {  
+      span {
+        font-family: "Futura";
+      }
       svg {
         color: var(--primary-color);
         font-size: 1.3rem;

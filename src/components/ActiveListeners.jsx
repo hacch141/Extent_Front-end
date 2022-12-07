@@ -25,7 +25,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use W..",
+      topic: "You should not use ..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -80,7 +80,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use W..",
+      topic: "You should not use ..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -135,7 +135,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use W..",
+      topic: "You should not use ..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -190,7 +190,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use W..",
+      topic: "You should not use ..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -343,9 +343,6 @@ const Section = styled.section`
         font-weight: 100;
       }
       .video-data {
-        // font-family: 'Avenir';
-        font-style: normal;
-        font-weight: 100;
         font-size: 18px;
         line-height: 25px;
         color: #E0E0E0;
@@ -354,6 +351,10 @@ const Section = styled.section`
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
+        h4 {
+          font-weight: 100;
+          font-size: 16px;
+        }
         .video-duration-div {
           display: flex;
           flex-direction: column;
@@ -365,10 +366,8 @@ const Section = styled.section`
           }
           h6 {
             color: #9F9F9F;
-            font-family: 'Avenir Next';
-            font-style: normal;
             font-weight: 100;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 19px;
             text-align: right;
           }
@@ -379,12 +378,16 @@ const Section = styled.section`
           flex-direction: column;
           gap: 0.1rem;
           text-align: left;
+          h4 {
+            font-weight: 700;
+            line-height: 25px;
+            font-size: 18px;
+          }
           h6 {
             color: #E0E0E0;
-            font-family: 'Avenir Next';
             font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 100;
+            font-size: 12px;
             line-height: 19px;
           }
         }

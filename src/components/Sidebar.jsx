@@ -49,6 +49,7 @@ function Sidebar() {
 
 const Aside = styled.aside`
   background-color: var(--dark-background-color);
+  // font-family: 'Avenir Next';
   height: 100%;
   width: 100%;
   padding: 2rem;

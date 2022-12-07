@@ -16,6 +16,5 @@ const Section = styled.section`
   width: 100%;
   padding: 0 3rem;
   padding-top: 2rem;
-  // margin-left: 100px;
 `;
 export default RightSidebar;
