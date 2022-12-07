@@ -12,10 +12,10 @@ function RightSidebar() {
 }
 
 const Section = styled.section`
-  height: 78%;
-  width: 85%;
+  height: 100%;
+  width: 100%;
   padding: 0 3rem;
   padding-top: 2rem;
-  margin-left: 100px;
+  // margin-left: 100px;
 `;
 export default RightSidebar;
