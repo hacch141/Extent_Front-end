@@ -25,7 +25,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use ..",
+      topic: "You should not use web2..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -80,7 +80,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use ..",
+      topic: "You should not use Web2..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -251,6 +251,14 @@ export default function ActiveListeners() {
             <h4>Pictures</h4>
           </div>
         </div>
+        <div className="header-div">
+          <h6 className="video">Video</h6>
+          <h6 className="date">Date</h6>
+          <h6 className="views">Views</h6>
+          <h6 className="comments">Comments</h6>
+          <h6 className="likes">Likes</h6>
+          <h6 className="preview">Previw</h6>
+        </div>
         <div className="active">
           {countries.map((data, index) => {
             return (
@@ -263,11 +271,11 @@ export default function ActiveListeners() {
                   <h4>{data.topic}</h4>
                   <h6>{data.subtopic}</h6>
                 </div>
-                <h4>{data.date}</h4>
-                <h4>{data.views}</h4>
-                <h4>{data.comments}</h4>
-                <h4>{data.likes}</h4>
-                <h4> <TiEye style={{color: "green", size:"30px"}} /> {data.preview}</h4>
+                <h4 className="date-div">{data.date}</h4>
+                <h4 className="views-div">{data.views}</h4>
+                <h4 className="comments-div">{data.comments}</h4>
+                <h4 className="likes-div">{data.likes}</h4>
+                <h4 className="preview-div"> <TiEye style={{color: "green", size:"30px"}} /> {data.preview}</h4>
               </div>
             );
           })}
@@ -300,6 +308,7 @@ const Section = styled.section`
     color: white;
     .title-container {
       width: 100%;
+      margin-bottom: 33px;
       padding-top: 1rem;
       .title {
         color: #A3A3A3;
@@ -322,14 +331,38 @@ const Section = styled.section`
         }
       }
     }
+    .header-div {
+      font-size: 14px;
+      line-height: 16px;
+      color: #646464;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      .video {
+        width: 40%;
+      }
+      .date {
+        width: 14.3%;
+      }
+      .views {
+        width: 9.3%;
+      }
+      .comments {
+        width: 11.8%;
+      }
+      .likes {
+        width: 10.7%;
+      }
+    }
     .active {
-      max-height: 37rem;
+      max-height: 35.3rem;
       overflow: auto;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
       padding-right: 1.5rem;
-      margin: 1rem 0;
+      margin: 0.3rem 0;
+      gap:0.3rem;
       ::-webkit-scrollbar {
         width: 4px;
         border-radius: 8px;
@@ -346,7 +379,7 @@ const Section = styled.section`
         font-size: 18px;
         line-height: 25px;
         color: #E0E0E0;
-        border-bottom: 0.1rem solid #242424;
+        border-top: 0.1rem solid #242424;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -356,6 +389,7 @@ const Section = styled.section`
           font-size: 16px;
         }
         .video-duration-div {
+          width: 6%;
           display: flex;
           flex-direction: column;
           gap: 0.1rem;
@@ -374,6 +408,7 @@ const Section = styled.section`
         }
 
         .topic-subtopic-div {
+          width: 25%;
           display: flex;
           flex-direction: column;
           gap: 0.1rem;
@@ -390,6 +425,21 @@ const Section = styled.section`
             font-size: 12px;
             line-height: 19px;
           }
+        }
+        .date-div {
+          width: 10%;
+        }
+        .views-div {
+          width: 6%;
+        }
+        .comments-div {
+          width: 6%;
+        }
+        .likes-div {
+          width: 6%;
+        }
+        .preview-div {
+          width: 10%;
         }
       }
     }
