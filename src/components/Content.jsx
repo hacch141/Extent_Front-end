@@ -7,10 +7,9 @@ import thumbnail4 from "assets/thumbnail4.png";
 import thumbnail5 from "assets/thumbnail5.png";
 import signal from "assets/signal.png";
 import { TiEye } from "react-icons/ti"
-// import { HiOutlineSignal } from "react-icons/hi";
 
-export default function ActiveListeners() {
-  const countries = [
+export default function Content() {
+  const videoContent = [
     {
       image: thumbnail1,
       duration: "1:15",
@@ -135,7 +134,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use ..",
+      topic: "You should not use web2..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -190,7 +189,7 @@ export default function ActiveListeners() {
     {
       image: thumbnail2,
       duration: "1:05",
-      topic: "You should not use ..",
+      topic: "You should not use web2..",
       subtopic: "Some important facts that matter.",
       date: "16 Jan 2022",
       views: 56,
@@ -232,11 +231,6 @@ export default function ActiveListeners() {
       preview: "Preview"
     },
   ];
-  const data = [
-    {
-      data: 3800,
-    },
-  ];
   return (
     <Section>
       <div className="content">
@@ -260,7 +254,7 @@ export default function ActiveListeners() {
           <h6 className="preview">Previw</h6>
         </div>
         <div className="active">
-          {countries.map((data, index) => {
+          {videoContent.map((data, index) => {
             return (
               <div className="video-data" key={index}>
                 <div className="video-duration-div">
@@ -293,6 +287,7 @@ const Section = styled.section`
     gap: 0.4rem;
     color: white;
     padding-bottom: 1rem;
+    cursor: pointer;
 
     img {
       size: 1rem;
@@ -306,6 +301,7 @@ const Section = styled.section`
     border-radius: 10px;
     padding: 1rem;
     color: white;
+
     .title-container {
       width: 100%;
       margin-bottom: 33px;
@@ -324,10 +320,7 @@ const Section = styled.section`
         h4 {
           font-size: 0.8rem;
           margin-bottom: 0.2rem;
-        }
-        h1 {
-          font-size: 1.5rem;
-          letter-spacing: 0.2rem;
+          cursor: pointer;
         }
       }
     }
@@ -393,6 +386,7 @@ const Section = styled.section`
           display: flex;
           flex-direction: column;
           gap: 0.1rem;
+          cursor: pointer;
           img {
             height: 3.5rem;
             size: 1rem;
@@ -414,6 +408,7 @@ const Section = styled.section`
           gap: 0.1rem;
           text-align: left;
           h4 {
+            cursor: pointer;
             font-weight: 700;
             line-height: 25px;
             font-size: 18px;
@@ -439,6 +434,7 @@ const Section = styled.section`
           width: 6%;
         }
         .preview-div {
+          cursor: pointer;
           width: 10%;
         }
       }

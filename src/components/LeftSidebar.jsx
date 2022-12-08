@@ -7,7 +7,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { ImPlus } from "react-icons/im";
 import logo from "assets/logo.png"
 import extent from "assets/Extent.png"
-function Sidebar() {
+function LeftSidebar() {
   return (
     <Aside id="sidebar">
       <div className="first-div">
@@ -49,7 +49,6 @@ function Sidebar() {
 
 const Aside = styled.aside`
   background-color: var(--dark-background-color);
-  // font-family: 'Avenir Next';
   height: 100%;
   width: 100%;
   padding: 2rem;
@@ -67,8 +66,8 @@ const Aside = styled.aside`
       justify-content: center;
       align-items: center;
       gap: 0.8rem;
-      svg {  
-        font-size: 2.5rem;
+      img {
+        cursor: pointer;
       }
     }
     .pages {
@@ -78,15 +77,17 @@ const Aside = styled.aside`
       list-style-type: none;
       li {
         padding: 0.5rem;
-        cursor: pointer;
+        
         display: flex;
         justify-content: left;
         align-items: center;
         gap: 0.5rem;
         h3{
+          cursor: pointer;
           color: white;
         }
         svg {
+          cursor: pointer;
           color: white;
           font-size: 1.2rem;
         }
@@ -108,4 +109,4 @@ const Aside = styled.aside`
   }
 `;
 
-export default Sidebar;
+export default LeftSidebar;

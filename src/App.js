@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import Sidebar from "components/Sidebar";
+import LeftSidebar from "components/LeftSidebar";
 import RightSidebar from "components/RightSidebar";
 import styled from "styled-components";
+
 export default function App() {
   return (
     <Div>
-      <Sidebar />
+      <LeftSidebar />
       <RightSidebar />
     </Div>
   );
@@ -14,7 +15,7 @@ export default function App() {
 const Div = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
-  min-height: 100vh;
-  height: max-content;
+  // min-height: 100vh;
+  // height: max-content;
   }
 `;

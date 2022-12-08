@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import ActiveListeners from "./ActiveListeners";
-import Avatar from "./Avatar";
+import Content from "./Content";
+import ProfileHeader from "./ProfileHeader";
 function RightSidebar() {
   return (
     <Section id="rightSidebar">
-      <Avatar />
-      <ActiveListeners />
+      <ProfileHeader />
+      <Content />
     </Section>
   );
 }
