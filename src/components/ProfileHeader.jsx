@@ -29,7 +29,7 @@ const Section = styled.section`
   display: flex;
   margin-left: 25%;
   margin-top: 10px;
-  margin-bottom: 109px;
+  margin-bottom: 88px;
   background-color: rgb(23, 23, 23);
   display: flex;
   justify-content: space-between;
