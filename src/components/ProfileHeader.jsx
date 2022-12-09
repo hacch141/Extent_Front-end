@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
 import avatar from "assets/Profile.png";
 import metamaskImg from "assets/metamask.png";
-export default function ProfileHeader() {
+
+function ProfileHeader() {
   return (
     <Section>
       <div className="metamask-div">
@@ -56,6 +57,7 @@ const Section = styled.section`
     text-align: right;
     gap: 0.5rem;
     .my-name { 
+      margin-top: 18px;
       h4 {
         cursor: pointer;
       } 
@@ -69,10 +71,15 @@ const Section = styled.section`
       box-shadow: inset 0px 4px 20px rgba(170, 170, 170, 0.25);
       border-radius: 100px;
       cursor: pointer;
+      height: 72px;
+      width: 72px;
       img {
         size: 1rem;
-        height: 3rem;
+        height: 2.7rem;
+        margin-top: 12px;
+        margin-right: 11px;
       }
     }
   }
 `;
+export default ProfileHeader;

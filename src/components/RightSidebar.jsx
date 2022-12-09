@@ -14,12 +14,12 @@ function RightSidebar() {
       <ProfileHeader />
       <Router>
         <Routes>
-          <Route path="/" element={<Content />} />
-          <Route path="/Analytics" element={<Analytics />} />
-          <Route path="/content" element={<Content />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Drafts" element={<Drafts />} />
-          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Extent_Front-end" element={<Content />} />
+          <Route path="/Extent_Front-end/Analytics" element={<Analytics />} />
+          <Route path="/Extent_Front-end/content" element={<Content />} />
+          <Route path="/Extent_Front-end/Dashboard" element={<Dashboard />} />
+          <Route path="/Extent_Front-end/Drafts" element={<Drafts />} />
+          <Route path="/Extent_Front-end/Profile" element={<Profile />} />
         </Routes>
       </Router>
     </Section>

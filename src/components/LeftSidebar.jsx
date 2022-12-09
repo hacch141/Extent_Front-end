@@ -7,7 +7,6 @@ import { FaUserAlt } from "react-icons/fa";
 import { ImPlus } from "react-icons/im"; 
 import logo from "assets/logo.png"
 import extent from "assets/Extent.png"
-import { BrowserRouter as Link} from "react-router-dom";
 function LeftSidebar() {
   return (
     <Aside id="sidebar"> 
@@ -19,23 +18,23 @@ function LeftSidebar() {
         <ul className="pages">
           <li> 
             <MdDashboard />
-            <Link to="/content"><h3>Dashboard</h3></Link>
+            <h3>Dashboard</h3>
           </li>
           <li>
             <BiBookContent />
-            <Link to="/content"><h3>Content</h3></Link>
+            <h3>Content</h3>
           </li>
           <li>
             <BiBookContent />
-            <Link to="/content"><h3>Drafts</h3></Link>
+            <h3>Drafts</h3>
           </li>
           <li>
             <SiSimpleanalytics /> 
-            <Link to="/content"><h3>Analytics</h3></Link>
+            <h3>Analytics</h3>
           </li>
           <li>
             <FaUserAlt /> 
-            <Link to="/content"><h3>Profile</h3></Link>
+            <h3>Profile</h3>
           </li>
         </ul>
       </div>
@@ -50,7 +49,8 @@ function LeftSidebar() {
 
 const Aside = styled.aside`
   background-color: var(--dark-background-color);
-  height: 100%;
+  height: 950px;
+  border-radius: 10px;
   width: 100%;
   padding: 2rem;
   display: flex;
