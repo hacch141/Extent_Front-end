@@ -71,6 +71,7 @@ function LeftSidebar() {
 
 const Aside = styled.aside`
   background-color: var(--dark-background-color);
+  box-shadow: inset 0px 0px 9px rgba(200, 200, 200, 0.25);
   height: 950px;
   border-radius: 10px;
   width: 100%;
@@ -79,7 +80,6 @@ const Aside = styled.aside`
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
-
   .first-div {
     display: flex;
     flex-direction: column;
@@ -100,7 +100,6 @@ const Aside = styled.aside`
       list-style-type: none;
       li {
         padding: 0.5rem;
-        
         display: flex;
         justify-content: left;
         align-items: center;
@@ -115,17 +114,12 @@ const Aside = styled.aside`
           font-size: 1.2rem;
         }
       }
-      .selected {
-        
-      }
     }
   }
-
   .second-div {
     .plus {
       display: flex;
       flex-direction: column;
-
       .options {
         display: flex;
         flex-direction: column;
@@ -141,7 +135,6 @@ const Aside = styled.aside`
           transition: all 1s ease-in-out;
         }
       }
-
       .activeOptions { 
         img {
           opacity:1;
@@ -150,7 +143,6 @@ const Aside = styled.aside`
           transform: rotate(360deg);
         }
       }
-
       .plusicon {
         button {
         background: #000000;
@@ -160,13 +152,16 @@ const Aside = styled.aside`
         cursor: pointer;
         height: 65px;
         width: 65px;
-          img {
-            size: 1rem;
-            height: 2.1rem;
-          }
+        img {
+          size: 1rem;
+          height: 2.1rem;
         }
       }
     }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    width: 100%;
+    height: 950px;
   }
 `;
 

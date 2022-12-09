@@ -30,7 +30,7 @@ const Section = styled.section`
   margin-left: 25%;
   margin-top: 10px;
   margin-bottom: 88px;
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,6 +80,34 @@ const Section = styled.section`
         margin-right: 11px;
       }
     }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 26px rgba(252, 252, 252, 0.25);
+    .name {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+      .my-name { 
+        margin-top: 18px;
+        h4 {
+          cursor: pointer;
+        } 
+        span {
+          font-family: "Futura";
+          cursor: pointer;
+        }
+      }
+      .my-avtar {
+        margin-left: 25px;
+        margin-top: 20px;
+      }
   }
 `;
 export default ProfileHeader;

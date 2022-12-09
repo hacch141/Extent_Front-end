@@ -296,8 +296,7 @@ const Section = styled.section`
   }
 
   .main-div {
-    background-color: var(--dark-background-color);
-    border: 3px solid #000000;
+    box-shadow: inset 0px 3px 20px rgba(200, 200, 200, 0.25);
     border-radius: 10px;
     padding: 1rem;
     color: white;
@@ -346,6 +345,9 @@ const Section = styled.section`
       }
       .likes {
         width: 10.7%;
+      }
+      .preview {
+
       }
     }
     .active {
@@ -436,6 +438,107 @@ const Section = styled.section`
         .preview-div {
           cursor: pointer;
           width: 10%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .content {
+      width: 128%;
+      margin-left: -14%;  
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .main-div {
+      width: 128%;
+      margin-left: -14%;
+      .title-container {
+        .title {
+          display: flex;
+          flex-direction: column;
+          h4 {
+            font-size: 0.8rem;
+            margin-bottom: 0.2rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .header-div {
+        font-size: 14px;
+        line-height: 16px;
+        color: #646464;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        .video {
+          width: 60%;
+        }
+        .date {
+          display: none;
+        }
+        .views {
+          width: 20%;
+        }
+        .comments {
+          display: none;
+        }
+        .likes {
+          width: 10.7%;
+        }
+        .preview {
+          display: none;
+        }
+      }
+      .active {
+        .video-data {
+          padding: 0.5rem;
+          h4 {
+            font-weight: 100;
+            font-size: 11px;
+          }
+          .video-duration-div {
+            width: 22%;
+            margin-left: -5%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            cursor: pointer;
+            img {
+              height: 3rem;
+              size: 1rem;
+              border-radius: 0.5rem;
+            }
+            h6 {
+              font-size: 9px;
+            }
+          }
+          .topic-subtopic-div {
+            width: 45%;
+            h4 {
+              font-size: 12px;
+            }
+            h6 {
+              display: none;
+            }
+          }
+          .date-div {
+            display: none;
+          }
+          .views-div {
+            width: 6%;
+          }
+          .comments-div {
+            display: none;
+          }
+          .likes-div {
+            width: 6%;
+          }
+          .preview-div {
+            display: none;
+          }
         }
       }
     }
