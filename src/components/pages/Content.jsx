@@ -300,7 +300,6 @@ const Section = styled.section`
     border-radius: 10px;
     padding: 1rem;
     color: white;
-
     .title-container {
       width: 100%;
       margin-bottom: 33px;
@@ -402,7 +401,6 @@ const Section = styled.section`
             text-align: right;
           }
         }
-
         .topic-subtopic-div {
           width: 25%;
           display: flex;
@@ -474,13 +472,13 @@ const Section = styled.section`
         text-align: left;
         width: 100%;
         .video {
-          width: 60%;
+          width: 68%;
         }
         .date {
           display: none;
         }
         .views {
-          width: 20%;
+          width: 13%;
         }
         .comments {
           display: none;
@@ -517,6 +515,10 @@ const Section = styled.section`
           }
           .topic-subtopic-div {
             width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            text-align: left;
             h4 {
               font-size: 12px;
             }
