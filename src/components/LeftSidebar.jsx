@@ -4,37 +4,38 @@ import { MdDashboard } from "react-icons/md";
 import { BiBookContent } from "react-icons/bi";
 import { SiSimpleanalytics } from "react-icons/si";
 import { FaUserAlt } from "react-icons/fa";
-import { ImPlus } from "react-icons/im";
+import { ImPlus } from "react-icons/im"; 
 import logo from "assets/logo.png"
 import extent from "assets/Extent.png"
+import { BrowserRouter as Link} from "react-router-dom";
 function LeftSidebar() {
   return (
-    <Aside id="sidebar">
+    <Aside id="sidebar"> 
       <div className="first-div">
         <div className="brand">
           <img src={logo} alt="logo" />
           <img src={extent} alt="extent" />
         </div>
         <ul className="pages">
-          <li>
+          <li> 
             <MdDashboard />
-            <h3>Dashborad</h3>
+            <Link to="/content"><h3>Dashboard</h3></Link>
           </li>
           <li>
             <BiBookContent />
-            <h3 className="selected">Content</h3>
+            <Link to="/content"><h3>Content</h3></Link>
           </li>
           <li>
             <BiBookContent />
-            <h3>Drafts</h3>
+            <Link to="/content"><h3>Drafts</h3></Link>
           </li>
           <li>
             <SiSimpleanalytics /> 
-            <h3>Analytics</h3>
+            <Link to="/content"><h3>Analytics</h3></Link>
           </li>
           <li>
             <FaUserAlt /> 
-            <h3>Profile</h3>
+            <Link to="/content"><h3>Profile</h3></Link>
           </li>
         </ul>
       </div>
