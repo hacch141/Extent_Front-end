@@ -22,9 +22,11 @@ Responsive Website.
 
 <br/>
 Here are some Snapshots of them.
-![main](https://user-images.githubusercontent.com/86292378/206830747-4fb17832-b0fa-421e-89d3-729c4639c135.png)
-
-
+1) desktop Layout
 ![main](https://user-images.githubusercontent.com/86292378/206791269-678c3c6e-24eb-4d7f-bc76-544a88864614.png)
+<br/>
+2) mobile Layout 1
 ![mobileView1](https://user-images.githubusercontent.com/86292378/206791376-88f161a8-4235-4ea2-9ccd-2a3e7de2216c.png)
+<br/>
+3) mobile Layout 2
 ![mobileView2](https://user-images.githubusercontent.com/86292378/206791398-242060e5-2098-4915-8bdf-5304774e4b40.png)
